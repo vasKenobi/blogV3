@@ -37,7 +37,7 @@ const posts = [
     },
 ]
 
-export const getProductsMap = (array) => {
+export const getPostsMap = (array) => {
     return array.reduce((map,product)=>({
         ...map,
         [product.id]:product,

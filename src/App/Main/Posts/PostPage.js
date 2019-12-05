@@ -1,9 +1,9 @@
 import React from 'react'
-import posts, { getProductsMap } from './posts'
+import posts, { getPostsMap } from './posts'
 
 const PostPage = ({
     match,
-    productsMap = getProductsMap(posts)
+    productsMap = getPostsMap(posts)
 }) => {
     console.log(match)
     return (

@@ -1,11 +1,11 @@
 import React from 'react'
 import {keys} from 'lodash'
-import posts, { getProductsMap } from '../../App/Main/Posts/posts'
+import posts, { getPostsMap } from '../../App/Main/Posts/posts'
 import FavouritesPostListItem from './FavouritesPostListItem'
 
 const FavouritesPostList = ({
     postsInFavourites,
-    productsMap = getProductsMap(posts),
+    productsMap = getPostsMap(posts),
     CartItem = FavouritesPostListItem,
     removePostFromFavourites,
     changePostRating

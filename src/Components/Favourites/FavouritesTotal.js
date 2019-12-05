@@ -1,11 +1,11 @@
 import React from "react"
 import {keys} from 'lodash'
-import posts, { getProductsMap } from "../../App/Main/Posts/posts"
+import posts, { getPostsMap } from "../../App/Main/Posts/posts"
 
 
 const PostRating = ({
     postsInFavourites,
-    productsMap=getProductsMap(posts)
+    productsMap=getPostsMap(posts)
 }) => {
     return (
         <div>
