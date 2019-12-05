@@ -10,6 +10,7 @@ const Menu = () => {
                 <li><Link to="/">Products</Link></li>
                 <li><Link to="/EnglishPL">English Premier League</Link></li>
                 <li><Link to="/MajorSL">Major Soccer League</Link></li>
+                <li><Link to="GermanBL">German Bundes Liga</Link></li>
             </ul>
         </div>
     )

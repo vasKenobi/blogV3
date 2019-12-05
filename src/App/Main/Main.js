@@ -5,6 +5,7 @@ import FavourtiesPage from './FavourtiesPage/FavourtiesPage'
 import MajorSL from './MajorSL/MajorSL'
 import EnglishPL from './EnglishPL/EnglishPL'
 import PostPage from './Posts/PostPage'
+import GermanBL from './GermanBL/GermanBL'
 
 const Main = ({
 	addProductToCart,
@@ -40,6 +41,7 @@ const Main = ({
 						/>)}/>
 						<Route path="/shipping" component={MajorSL}/>
 						<Route path="/EnglishPL" component={EnglishPL}/>
+						<Route path="/GermanBL" component={GermanBL}/>
 						<Route path="/products/:productId" component={PostPage} />
 					</div>
 				</div>
