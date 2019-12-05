@@ -4,14 +4,14 @@ import posts, { getProductsMap } from "../../App/Main/Posts/posts"
 
 
 const PostRating = ({
-    productsInCart,
+    postsInFavourites,
     productsMap=getProductsMap(posts)
 }) => {
     return (
         <div>
             Total : {
-                keys(productsInCart).reduce((total,productId)=>(
-                    total + (productsInCart[productId] * productsMap[productId].price)
+                keys(postsInFavourites).reduce((total,productId)=>(
+                    total + (postsInFavourites[productId] * productsMap[productId].price)
                 ),0)
             } $
         </div>

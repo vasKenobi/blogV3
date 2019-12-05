@@ -7,7 +7,7 @@ import Menu from './Menu/Menu'
 import Favourites from './Favourites/Favourites'
 
 const Header = ({
-	productsInCart
+	postsInFavourites
 }) => {
 
 	return (
@@ -22,7 +22,7 @@ const Header = ({
 					</div>
 					<div className="col-lg-3">
 						<Favourites 
-							productsInCart={productsInCart}
+							postsInFavourites={postsInFavourites}
 						/>
 					</div>
 				</div>

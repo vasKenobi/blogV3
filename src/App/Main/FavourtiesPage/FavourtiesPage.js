@@ -4,7 +4,7 @@ import FavouritesPostList from '../../../Components/Favourites/FavouritesPostLis
 import FavouritesPostListItemExtended from '../../../Components/Favourites/FavouritesPostListItemExtended'
 
 const FavourtiesPage = ({
-    productsInCart,
+    postsInFavourites,
     removeProductFromCart,
     changeProductQuantity
 }) => {
@@ -12,13 +12,13 @@ const FavourtiesPage = ({
         <div>
             <h1 className="page-title">Cart</h1>
             <FavouritesPostList
-                productsInCart={productsInCart}
+                postsInFavourites={postsInFavourites}
                 CartItem={FavouritesPostListItemExtended}
                 removeProductFromCart={removeProductFromCart}
                 changeProductQuantity={changeProductQuantity}
             />     
             <FavouritesTotal
-                productsInCart={productsInCart}
+                postsInFavourites={postsInFavourites}
             />
                     
                 

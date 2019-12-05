@@ -11,7 +11,7 @@ import Footer from './Footer/Footer'
 class App extends Component {
 
 	state = {
-		productsInCart: {
+		postsInFavourites: {
 			'1':5,
 			'2':10
 		},
@@ -24,22 +24,22 @@ class App extends Component {
 
 	addProductToCart = (productId,count) =>{
 		this.setState((prevState)=>({
-			productsInCart:{
-				...prevState.productsInCart,
-				[productId]:(prevState.productsInCart[productId] || 0 ) + count
+			postsInFavourites:{
+				...prevState.postsInFavourites,
+				[productId]:(prevState.postsInFavourites[productId] || 0 ) + count
 			}
 		}))
 	}
 
 	removeProductFromCart = (productId) => {
 		this.setState((prevState)=>({
-			productsInCart:omit(prevState.productsInCart,productId)
+			postsInFavourites:omit(prevState.postsInFavourites,productId)
 		}))
 	}	
 	changeProductQuantity = (productId,count) => {
 		this.setState((prevState)=>({
-			productsInCart:{
-				...prevState.productsInCart,
+			postsInFavourites:{
+				...prevState.postsInFavourites,
 				[productId]:count,
 			}
 		}))
@@ -69,13 +69,13 @@ class App extends Component {
 		return (
 			<div>
 				<Header 
-					productsInCart={this.state.productsInCart}
+					postsInFavourites={this.state.postsInFavourites}
 					
 				/>
 				
 				<Main 
 					addProductToCart={this.addProductToCart}
-					productsInCart={this.state.productsInCart}
+					postsInFavourites={this.state.postsInFavourites}
 					removeProductFromCart={this.removeProductFromCart}
 					changeProductQuantity={this.changeProductQuantity}
 					productsLikeState={this.state.productsLikeState}

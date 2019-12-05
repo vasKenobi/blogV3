@@ -6,15 +6,15 @@ import FavouritesPostList from '../../../Components/Favourites/FavouritesPostLis
 
 
 const Favourites = ({
-    productsInCart,
+    postsInFavourites,
 }) => {
     return (
         <div className="cart text-center">
             <FavouritesPostList
-                productsInCart={productsInCart}
+                postsInFavourites={postsInFavourites}
             />           
             <FavouritesTotal
-                productsInCart={productsInCart}
+                postsInFavourites={postsInFavourites}
             />
             <Link to="/cart">Show cart</Link>
         </div>

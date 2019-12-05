@@ -4,7 +4,7 @@ import posts, { getProductsMap } from '../../App/Main/Posts/posts'
 import FavouritesPostListItem from './FavouritesPostListItem'
 
 const FavouritesPostList = ({
-    productsInCart,
+    postsInFavourites,
     productsMap = getProductsMap(posts),
     CartItem = FavouritesPostListItem,
     removeProductFromCart,
@@ -13,10 +13,10 @@ const FavouritesPostList = ({
     return (
         <div>
             {
-                keys(productsInCart).map((productId)=>(
+                keys(postsInFavourites).map((productId)=>(
                     <CartItem
                         product = {productsMap[productId]}
-                        productsCount = {productsInCart[productId]}
+                        productsCount = {postsInFavourites[productId]}
                         key={productId}
                         removeProductFromCart={removeProductFromCart}
                         changeProductQuantity={changeProductQuantity}
