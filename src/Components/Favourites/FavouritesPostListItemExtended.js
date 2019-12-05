@@ -1,6 +1,6 @@
 import React from 'react'
 import './FavouritesPostListItemExtended.css'
-import ProductQuantity from '../Quantity/ProductQuantity'
+import PostRating from '../Rating/PostRating'
 
 
 const FavouritesPostListItemExtended = ({
@@ -25,7 +25,7 @@ const FavouritesPostListItemExtended = ({
                         Selected quantity: <span className="bold"> {productsCount} </span> 
                         
                 </p>
-                <ProductQuantity
+                <PostRating
                     productsCount={productsCount}
                     onDecrementClick={()=>{
                         if(productsCount===1) {

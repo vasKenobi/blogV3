@@ -2,7 +2,7 @@ import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types';
 import './PostListItem.css'
-import ProductQuantity from '../../../Components/Quantity/ProductQuantity';
+import PostRating from '../../../Components/Rating/PostRating';
 
 
 
@@ -65,7 +65,7 @@ class PostListItem extends Component {
                 <div className="product-features">Type: {type}</div>
                 <div className="product-features">Capacity: {capacity} Gb</div>
                 <div className="product-price">Price : {price} $</div>
-                <ProductQuantity
+                <PostRating
                     productsCount={this.state.productsCount}
                     onIncrementClick={this.onIncrementClick}
                     onDecrementClick={this.onDecrementClick}

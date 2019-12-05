@@ -3,7 +3,7 @@ import {keys} from 'lodash'
 import posts, { getProductsMap } from "../../App/Main/Posts/posts"
 
 
-const FavouritesTotal = ({
+const PostRating = ({
     productsInCart,
     productsMap=getProductsMap(posts)
 }) => {
@@ -18,4 +18,4 @@ const FavouritesTotal = ({
     )
 }
 
-export default FavouritesTotal
+export default PostRating
