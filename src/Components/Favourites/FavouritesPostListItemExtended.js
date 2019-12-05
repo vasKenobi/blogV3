@@ -18,11 +18,11 @@ const FavouritesPostListItemExtended = ({
                 <p className="cart-extended-name">
                     <span> {post.name} </span> 
                 </p>
-                <p className="cart-extended-price">
-                        initRating for one item: <span className="bold">$ {post.initRating} </span> 
+                <p className="cart-extended-price" title="1 means best article you've ever read. 1000000 means worst one ever.">
+                        Initial marks: <span className="bold"> {post.initRating} </span> 
                 </p>
-                <p className="cart-extended-count">
-                        Selected quantity: <span className="bold"> {postsRating} </span> 
+                <p className="cart-extended-count" title="1 means best article you've ever read. 1000000 means worst one ever.">
+                        Granted marks: <span className="bold"> {postsRating} </span> 
                         
                 </p>
                 <PostRating
@@ -37,8 +37,8 @@ const FavouritesPostListItemExtended = ({
                     onIncrementClick={()=>changePostRating(post.id,postsRating+1)}
                     minCount={0}
                 />
-                <p className="cart-extended-sum">
-                        Sum for this item: <span className="bold sum-price">$ {(post.initRating * postsRating)} </span> 
+                <p className="cart-extended-sum" title="1 means best article you've ever read. 1000000 means worst one ever.">
+                        Final granted marks: <span className="bold sum-price"> {(post.initRating * postsRating)} </span> 
                 </p>
                 <button onClick={()=>removePostFromFavourites(post.id)}>Remove from Favourites</button>
                 

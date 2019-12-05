@@ -1,7 +1,5 @@
 import React,{Component} from 'react'
 import {omit} from 'lodash'
-import '../common/style/reset.css'
-import '../common/style/base.css'
 import '../common/css/bootstrap.css'
 import '../common/css/colors.css'
 import '../common/css/font-awesome.min.css'
@@ -18,12 +16,10 @@ class App extends Component {
 
 	state = {
 		postsInFavourites: {
-			'1':5,
-			'2':10
+			
 		},
 		postsLikeState: {
-			'1':true,
-			'2':true,
+			
 		}
 		
 	}

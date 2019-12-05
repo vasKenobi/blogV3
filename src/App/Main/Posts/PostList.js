@@ -10,9 +10,7 @@ const PostList = ({
     addLike
 }) => {
     return (
-        <div>
-            <h1 className="page-title">Posts List</h1>
-            <div className="row">
+        <div className="blog-list clearfix">
                 {
                     posts.map(({
                         id,
@@ -37,12 +35,13 @@ const PostList = ({
                                 removeLike={removeLike}
 								addLike={addLike}
                             />
+                            <hr className="invis"/>
                         </div> 
                     ))
                 }
 
             </div>
-        </div>
+        
     )
 }
 

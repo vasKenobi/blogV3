@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types';
-import './PostListItem.css'
 import PostRating from '../../../Components/Rating/PostRating';
 
 
@@ -51,30 +50,36 @@ class PostListItem extends Component {
         } = this.props
 
         return (
-            <div className="product-list-item">
-                <div className="product-image">
-                    <img src={image} alt=""/>
+            <div className="blog-box row">
+                <div className="col-md-4">
+                    <div className="post-media">
+                        <img src={image} alt="" className="img-fluid"/>
+                        <div className="hovereffect"></div>
+                    </div>
                 </div>
-                <button onClick={()=>this.renderLike()}>
-                    {isLiked ? <span>&#9829;</span> : <span>&#9825;</span>}
-                </button>
-                <div className="product-title">
-                    <Link to={`/posts/${id}`}>{name}</Link>
+                
+                <div className="blog-meta big-meta col-md-8">
+                    <button class="btn btn-primary" onClick={()=>this.renderLike()}>
+                        {isLiked ? <span>&#9829;</span> : <span>&#9825;</span>}
+                    </button>
+                    <h4 className="bg-aqua">
+                        <Link to={`/posts/${id}`}>{name}</Link>
+                    </h4>
+                    <div>{description}</div>
+                    <div>{author}</div>
+                    <div className="bg-aqua">{category}</div>
+                    <div>Initial Rating : {initRating}</div>
+                    <PostRating
+                        postsRating={this.state.postsRating}
+                        onIncrementClick={this.onIncrementClick}
+                        onDecrementClick={this.onDecrementClick}
+                        minCount={1}
+                    />
+                    <button class="btn btn-primary"
+                        onClick={()=>addPostToFavourites(id,this.state.postsRating)}
+                        >Add to Favourites
+                    </button>
                 </div>
-                <div className="product-description">{description}</div>
-                <div className="product-features">author: {author}</div>
-                <div className="product-features">category: {category} Gb</div>
-                <div className="product-initRating">initRating : {initRating} $</div>
-                <PostRating
-                    postsRating={this.state.postsRating}
-                    onIncrementClick={this.onIncrementClick}
-                    onDecrementClick={this.onDecrementClick}
-                    minCount={1}
-                />
-                <button 
-                    className="btn btn-add-to-cart"
-                    onClick={()=>addPostToFavourites(id,this.state.postsRating)}
-                    >Add to Favourites</button>
             </div>
         )
     }
