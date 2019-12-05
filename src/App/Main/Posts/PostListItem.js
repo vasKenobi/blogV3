@@ -42,7 +42,7 @@ class PostListItem extends Component {
             name,
             description,
             category,
-            type,
+            author,
             initRating,
             image,
             addPostToFavourites,
@@ -62,7 +62,7 @@ class PostListItem extends Component {
                     <Link to={`/posts/${id}`}>{name}</Link>
                 </div>
                 <div className="product-description">{description}</div>
-                <div className="product-features">Type: {type}</div>
+                <div className="product-features">author: {author}</div>
                 <div className="product-features">category: {category} Gb</div>
                 <div className="product-initRating">initRating : {initRating} $</div>
                 <PostRating
@@ -86,7 +86,7 @@ PostListItem.propTypes = {
     name:PropTypes.string.isRequired,
     description:PropTypes.string.isRequired,
     category:PropTypes.string.isRequired,
-    type:PropTypes.string.isRequired,
+    author:PropTypes.string.isRequired,
     initRating:PropTypes.number.isRequired,
 }
 

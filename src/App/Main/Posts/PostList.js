@@ -20,7 +20,7 @@ const PostList = ({
                         description,
                         category,
                         initRating,
-                        type,
+                        author,
                         image
                     })=> (
                         <div className="col-lg-6" key={id}>
@@ -29,7 +29,7 @@ const PostList = ({
                                 name={name}
                                 description={description}
                                 category={category}
-                                type={type}
+                                author={author}
                                 initRating={initRating}
                                 image={image}
                                 addPostToFavourites={addPostToFavourites}
