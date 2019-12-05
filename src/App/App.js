@@ -15,7 +15,7 @@ class App extends Component {
 			'1':5,
 			'2':10
 		},
-		productsLikeState: {
+		postsLikeState: {
 			'1':true,
 			'2':true,
 		}
@@ -47,8 +47,8 @@ class App extends Component {
 
 	addLike = (productId) => {
 		this.setState((prevState)=>({
-			productsLikeState:{
-				...prevState.productsLikeState,
+			postsLikeState:{
+				...prevState.postsLikeState,
 				[productId]:true
 			}
 		}))
@@ -56,8 +56,8 @@ class App extends Component {
 
 	removeLike = (productId) => {
 		this.setState((prevState)=>({
-			productsLikeState:{
-				...prevState.productsLikeState,
+			postsLikeState:{
+				...prevState.postsLikeState,
 				[productId]:false
 			}
 		}))
@@ -78,7 +78,7 @@ class App extends Component {
 					postsInFavourites={this.state.postsInFavourites}
 					removeProductFromCart={this.removeProductFromCart}
 					changeProductQuantity={this.changeProductQuantity}
-					productsLikeState={this.state.productsLikeState}
+					postsLikeState={this.state.postsLikeState}
 					removeLike={this.removeLike}
 					addLike={this.addLike}
 				/>
