@@ -1,6 +1,6 @@
  import React from 'react'
 
- const ProductQuantity = ({
+ const PostRating = ({
      onDecrementClick,
      onIncrementClick,
      postsRating,
@@ -21,4 +21,4 @@
      )
  }
 
- export default ProductQuantity
+ export default PostRating
