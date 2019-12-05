@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CartProductListItem = ({
+const FavouritesPostListItem = ({
     productsCount,
     product
 }) => {
@@ -9,4 +9,4 @@ const CartProductListItem = ({
     )
 }
 
-export default CartProductListItem
+export default FavouritesPostListItem

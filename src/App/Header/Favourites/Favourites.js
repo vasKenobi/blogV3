@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import './Favourites.css'
 import CartTotal from '../../../Components/Favourites/CartTotal'
-import CartProductList from '../../../Components/Favourites/CartProductList'
+import FavouritesPostList from '../../../Components/Favourites/FavouritesPostList'
 
 
 const Favourites = ({
@@ -10,7 +10,7 @@ const Favourites = ({
 }) => {
     return (
         <div className="cart text-center">
-            <CartProductList
+            <FavouritesPostList
                 productsInCart={productsInCart}
             />           
             <CartTotal

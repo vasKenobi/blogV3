@@ -1,6 +1,6 @@
 import React from 'react'
 import CartTotal from '../../../Components/Favourites/CartTotal'
-import CartProductList from '../../../Components/Favourites/CartProductList'
+import FavouritesPostList from '../../../Components/Favourites/FavouritesPostList'
 import CartProductListItemExtended from '../../../Components/Favourites/CartProductListItemExtended'
 
 const FavourtiesPage = ({
@@ -11,7 +11,7 @@ const FavourtiesPage = ({
     return (
         <div>
             <h1 className="page-title">Cart</h1>
-            <CartProductList
+            <FavouritesPostList
                 productsInCart={productsInCart}
                 CartItem={CartProductListItemExtended}
                 removeProductFromCart={removeProductFromCart}

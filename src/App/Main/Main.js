@@ -39,9 +39,10 @@ const Main = ({
 								changeProductQuantity={changeProductQuantity}
 								
 						/>)}/>
-						<Route path="/shipping" component={MajorSL}/>
+						<Route path="/MajorSL" component={MajorSL}/>
 						<Route path="/EnglishPL" component={EnglishPL}/>
 						<Route path="/GermanBL" component={GermanBL}/>
+						
 						<Route path="/products/:productId" component={PostPage} />
 					</div>
 				</div>

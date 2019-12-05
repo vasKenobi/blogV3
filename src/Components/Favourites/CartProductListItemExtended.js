@@ -1,5 +1,5 @@
 import React from 'react'
-import './CartProductListItemExtended.css'
+import './FavouritesPostListItemExtended.css'
 import ProductQuantity from '../Quantity/ProductQuantity'
 
 

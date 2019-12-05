@@ -1,12 +1,12 @@
 import React from 'react'
 import {keys} from 'lodash'
 import posts, { getProductsMap } from '../../App/Main/Posts/posts'
-import CartProductListItem from './CartProductListItem'
+import FavouritesPostListItem from './FavouritesPostListItem'
 
-const CartProductList = ({
+const FavouritesPostList = ({
     productsInCart,
     productsMap = getProductsMap(posts),
-    CartItem = CartProductListItem,
+    CartItem = FavouritesPostListItem,
     removeProductFromCart,
     changeProductQuantity
 }) => {
@@ -27,4 +27,4 @@ const CartProductList = ({
     )
 }
 
-export default CartProductList
+export default FavouritesPostList
