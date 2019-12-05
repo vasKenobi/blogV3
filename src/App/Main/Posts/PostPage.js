@@ -1,7 +1,7 @@
 import React from 'react'
 import products, { getProductsMap } from './products'
 
-const ProductPage = ({
+const PostPage = ({
     match,
     productsMap = getProductsMap(products)
 }) => {
@@ -13,4 +13,4 @@ const ProductPage = ({
     )
 }
 
-export default ProductPage
+export default PostPage

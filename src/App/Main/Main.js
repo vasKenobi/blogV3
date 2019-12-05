@@ -4,7 +4,7 @@ import ProductsList from './Posts/ProductsList'
 import FavourtiesPage from './FavourtiesPage/FavourtiesPage'
 import ShippingPage from './ShippingPage/ShippingPage'
 import EnglishPL from './EnglishPL/EnglishPL'
-import ProductPage from './Posts/ProductPage'
+import PostPage from './Posts/PostPage'
 
 const Main = ({
 	addProductToCart,
@@ -40,7 +40,7 @@ const Main = ({
 						/>)}/>
 						<Route path="/shipping" component={ShippingPage}/>
 						<Route path="/EnglishPL" component={EnglishPL}/>
-						<Route path="/products/:productId" component={ProductPage} />
+						<Route path="/products/:productId" component={PostPage} />
 					</div>
 				</div>
 			</div>
