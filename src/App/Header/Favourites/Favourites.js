@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './Favourites.css'
-import CartTotal from '../../../Components/Favourites/CartTotal'
+import FavouritesTotal from '../../../Components/Favourites/FavouritesTotal'
 import FavouritesPostList from '../../../Components/Favourites/FavouritesPostList'
 
 
@@ -13,7 +13,7 @@ const Favourites = ({
             <FavouritesPostList
                 productsInCart={productsInCart}
             />           
-            <CartTotal
+            <FavouritesTotal
                 productsInCart={productsInCart}
             />
             <Link to="/cart">Show cart</Link>

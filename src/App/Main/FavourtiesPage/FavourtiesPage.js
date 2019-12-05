@@ -1,5 +1,5 @@
 import React from 'react'
-import CartTotal from '../../../Components/Favourites/CartTotal'
+import FavouritesTotal from '../../../Components/Favourites/FavouritesTotal'
 import FavouritesPostList from '../../../Components/Favourites/FavouritesPostList'
 import FavouritesPostListItemExtended from '../../../Components/Favourites/FavouritesPostListItemExtended'
 
@@ -17,7 +17,7 @@ const FavourtiesPage = ({
                 removeProductFromCart={removeProductFromCart}
                 changeProductQuantity={changeProductQuantity}
             />     
-            <CartTotal
+            <FavouritesTotal
                 productsInCart={productsInCart}
             />
                     
