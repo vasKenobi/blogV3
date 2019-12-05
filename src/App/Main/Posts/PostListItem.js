@@ -1,12 +1,12 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types';
-import './ProductListItem.css'
+import './PostListItem.css'
 import ProductQuantity from '../../../Components/Quantity/ProductQuantity';
 
 
 
-class ProductListItem extends Component {
+class PostListItem extends Component {
     state = {
         productsCount:1,
     }
@@ -81,7 +81,7 @@ class ProductListItem extends Component {
 }
 
 
-ProductListItem.propTypes = {
+PostListItem.propTypes = {
     image:PropTypes.string,
     name:PropTypes.string.isRequired,
     description:PropTypes.string,
@@ -89,9 +89,7 @@ ProductListItem.propTypes = {
     type:PropTypes.string.isRequired,
     price:PropTypes.number.isRequired,
 }
-ProductListItem.defaultProps = {
-    description:"No description ..."
-}
 
-export default ProductListItem
+
+export default PostListItem
 

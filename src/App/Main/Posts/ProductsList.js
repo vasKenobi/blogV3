@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductListItem from './ProductListItem'
+import PostListItem from './PostListItem'
 import products from './products'
 
 
@@ -24,7 +24,7 @@ const ProductsList = ({
                         image
                     })=> (
                         <div className="col-lg-6" key={id}>
-                            <ProductListItem
+                            <PostListItem
                                 id={id}
                                 name={name}
                                 description={description}
