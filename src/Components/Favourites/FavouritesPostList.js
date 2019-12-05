@@ -2,7 +2,7 @@ import React from 'react'
 import {keys} from 'lodash'
 import posts, { getPostsMap } from '../../App/Main/Posts/posts'
 import FavouritesPostListItem from './FavouritesPostListItem'
-
+//comments
 const FavouritesPostList = ({
     postsInFavourites,
     postsMap = getPostsMap(posts),
