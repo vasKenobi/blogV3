@@ -59,7 +59,7 @@ class PostListItem extends Component {
                     {isLiked ? <span>&#9829;</span> : <span>&#9825;</span>}
                 </button>
                 <div className="product-title">
-                    <Link to={`/products/${id}`}>{name}</Link>
+                    <Link to={`/posts/${id}`}>{name}</Link>
                 </div>
                 <div className="product-description">{description}</div>
                 <div className="product-features">Type: {type}</div>
@@ -74,7 +74,7 @@ class PostListItem extends Component {
                 <button 
                     className="btn btn-add-to-cart"
                     onClick={()=>addPostToFavourites(id,this.state.postsRating)}
-                    >Add to cart</button>
+                    >Add to Favourites</button>
             </div>
         )
     }
