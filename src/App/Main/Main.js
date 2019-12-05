@@ -10,7 +10,7 @@ import GermanBL from './GermanBL/GermanBL'
 const Main = ({
 	addPostToFavourites,
 	postsInFavourites,
-	removeProductFromCart,
+	removePostFromFavourites,
 	changeProductQuantity,
 	postsLikeState,
 	removeLike,
@@ -35,7 +35,7 @@ const Main = ({
 						<Route path="/cart" render={()=>(
 							<FavourtiesPage
 								postsInFavourites={postsInFavourites}
-								removeProductFromCart={removeProductFromCart}
+								removePostFromFavourites={removePostFromFavourites}
 								changeProductQuantity={changeProductQuantity}
 								
 						/>)}/>

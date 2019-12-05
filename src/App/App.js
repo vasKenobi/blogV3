@@ -31,7 +31,7 @@ class App extends Component {
 		}))
 	}
 
-	removeProductFromCart = (productId) => {
+	removePostFromFavourites = (productId) => {
 		this.setState((prevState)=>({
 			postsInFavourites:omit(prevState.postsInFavourites,productId)
 		}))
@@ -76,7 +76,7 @@ class App extends Component {
 				<Main 
 					addPostToFavourites={this.addPostToFavourites}
 					postsInFavourites={this.state.postsInFavourites}
-					removeProductFromCart={this.removeProductFromCart}
+					removePostFromFavourites={this.removePostFromFavourites}
 					changeProductQuantity={this.changeProductQuantity}
 					postsLikeState={this.state.postsLikeState}
 					removeLike={this.removeLike}

@@ -5,7 +5,7 @@ import FavouritesPostListItemExtended from '../../../Components/Favourites/Favou
 
 const FavourtiesPage = ({
     postsInFavourites,
-    removeProductFromCart,
+    removePostFromFavourites,
     changeProductQuantity
 }) => {
     return (
@@ -14,7 +14,7 @@ const FavourtiesPage = ({
             <FavouritesPostList
                 postsInFavourites={postsInFavourites}
                 CartItem={FavouritesPostListItemExtended}
-                removeProductFromCart={removeProductFromCart}
+                removePostFromFavourites={removePostFromFavourites}
                 changeProductQuantity={changeProductQuantity}
             />     
             <FavouritesTotal

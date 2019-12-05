@@ -6,7 +6,7 @@ import PostRating from '../Rating/PostRating'
 const FavouritesPostListItemExtended = ({
     product,
     productsCount,
-    removeProductFromCart,
+    removePostFromFavourites,
     changeProductQuantity
 }) => (
     <div className="cart-product-list-item-description">
@@ -29,7 +29,7 @@ const FavouritesPostListItemExtended = ({
                     productsCount={productsCount}
                     onDecrementClick={()=>{
                         if(productsCount===1) {
-                            removeProductFromCart(product.id)
+                            removePostFromFavourites(product.id)
                         } else {
                             changeProductQuantity(product.id,productsCount-1)
                         }
@@ -40,7 +40,7 @@ const FavouritesPostListItemExtended = ({
                 <p className="cart-extended-sum">
                         Sum for this item: <span className="bold sum-price">$ {(product.price * productsCount)} </span> 
                 </p>
-                <button onClick={()=>removeProductFromCart(product.id)}>Delete Product</button>
+                <button onClick={()=>removePostFromFavourites(product.id)}>Delete Product</button>
                 
             </div>
         </div>
