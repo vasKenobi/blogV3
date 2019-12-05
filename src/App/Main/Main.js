@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
 import ProductsList from './Products/ProductsList'
-import CartPage from './CartPage/CartPage'
+import FavourtiesPage from './FavourtiesPage/FavourtiesPage'
 import ShippingPage from './ShippingPage/ShippingPage'
 import PaymentPage from './PaymentPage/PaymentPage'
 import ProductPage from './Products/ProductPage'
@@ -32,7 +32,7 @@ const Main = ({
 						/>
 						)}/>
 						<Route path="/cart" render={()=>(
-							<CartPage
+							<FavourtiesPage
 								productsInCart={productsInCart}
 								removeProductFromCart={removeProductFromCart}
 								changeProductQuantity={changeProductQuantity}

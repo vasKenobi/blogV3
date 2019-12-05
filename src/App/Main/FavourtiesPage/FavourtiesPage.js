@@ -3,7 +3,7 @@ import CartTotal from '../../../Components/Cart/CartTotal'
 import CartProductList from '../../../Components/Cart/CartProductList'
 import CartProductListItemExtended from '../../../Components/Cart/CartProductListItemExtended'
 
-const CartPage = ({
+const FavourtiesPage = ({
     productsInCart,
     removeProductFromCart,
     changeProductQuantity
@@ -25,4 +25,4 @@ const CartPage = ({
         </div>
     )
 }
-export default CartPage
+export default FavourtiesPage
