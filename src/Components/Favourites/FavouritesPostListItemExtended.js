@@ -7,7 +7,7 @@ const FavouritesPostListItemExtended = ({
     product,
     productsCount,
     removePostFromFavourites,
-    changeProductQuantity
+    changePostRating
 }) => (
     <div className="cart-product-list-item-description">
         <div className="row">
@@ -31,10 +31,10 @@ const FavouritesPostListItemExtended = ({
                         if(productsCount===1) {
                             removePostFromFavourites(product.id)
                         } else {
-                            changeProductQuantity(product.id,productsCount-1)
+                            changePostRating(product.id,productsCount-1)
                         }
                     }}
-                    onIncrementClick={()=>changeProductQuantity(product.id,productsCount+1)}
+                    onIncrementClick={()=>changePostRating(product.id,productsCount+1)}
                     minCount={0}
                 />
                 <p className="cart-extended-sum">

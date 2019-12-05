@@ -8,7 +8,7 @@ const FavouritesPostList = ({
     productsMap = getProductsMap(posts),
     CartItem = FavouritesPostListItem,
     removePostFromFavourites,
-    changeProductQuantity
+    changePostRating
 }) => {
     return (
         <div>
@@ -19,7 +19,7 @@ const FavouritesPostList = ({
                         productsCount = {postsInFavourites[productId]}
                         key={productId}
                         removePostFromFavourites={removePostFromFavourites}
-                        changeProductQuantity={changeProductQuantity}
+                        changePostRating={changePostRating}
                     />
                 ))
             }

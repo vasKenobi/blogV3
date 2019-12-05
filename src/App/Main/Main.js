@@ -11,7 +11,7 @@ const Main = ({
 	addPostToFavourites,
 	postsInFavourites,
 	removePostFromFavourites,
-	changeProductQuantity,
+	changePostRating,
 	postsLikeState,
 	removeLike,
 	addLike,
@@ -36,7 +36,7 @@ const Main = ({
 							<FavourtiesPage
 								postsInFavourites={postsInFavourites}
 								removePostFromFavourites={removePostFromFavourites}
-								changeProductQuantity={changeProductQuantity}
+								changePostRating={changePostRating}
 								
 						/>)}/>
 						<Route path="/MajorSL" component={MajorSL}/>
