@@ -5,7 +5,7 @@ import FavouritesPostListItem from './FavouritesPostListItem'
 
 const FavouritesPostList = ({
     postsInFavourites,
-    productsMap = getPostsMap(posts),
+    postsMap = getPostsMap(posts),
     CartItem = FavouritesPostListItem,
     removePostFromFavourites,
     changePostRating
@@ -15,7 +15,7 @@ const FavouritesPostList = ({
             {
                 keys(postsInFavourites).map((postId)=>(
                     <CartItem
-                        product = {productsMap[postId]}
+                        product = {postsMap[postId]}
                         productsCount = {postsInFavourites[postId]}
                         key={postId}
                         removePostFromFavourites={removePostFromFavourites}

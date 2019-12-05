@@ -3,12 +3,12 @@ import posts, { getPostsMap } from './posts'
 
 const PostPage = ({
     match,
-    productsMap = getPostsMap(posts)
+    postsMap = getPostsMap(posts)
 }) => {
     console.log(match)
     return (
         <div>
-            <h1 className="page-title">{productsMap[match.params.postId].name} </h1>
+            <h1 className="page-title">{postsMap[match.params.postId].name} </h1>
         </div>
     )
 }
