@@ -1,16 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './menu.css'
 
 const Menu = () => {
     return (
-        <div className="menu">
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/">posts</Link></li>
-                <li><Link to="/EnglishPL">English Premier League</Link></li>
-                <li><Link to="/MajorSL">Major Soccer League</Link></li>
-                <li><Link to="GermanBL">German Bundes Liga</Link></li>
+        <div className="collapse navbar-collapse justify-content-md-center">
+            <ul className="navbar-nav">
+                <li className="nav-item"><Link class="nav-link color-green-hover" to="/">Home</Link></li>
+                <li className="nav-item"><Link class="nav-link color-green-hover" to="/">posts</Link></li>
+                <li className="nav-item"><Link class="nav-link color-green-hover" to="/EnglishPL">English Premier League</Link></li>
+                <li className="nav-item"><Link class="nav-link color-green-hover" to="/MajorSL">Major Soccer League</Link></li>
+                <li className="nav-item"><Link class="nav-link color-green-hover" to="GermanBL">German Bundes Liga</Link></li>
             </ul>
         </div>
     )
