@@ -1,11 +1,11 @@
 import React from "react"
 import {keys} from 'lodash'
-import products, { getProductsMap } from "../../App/Main/Posts/products"
+import posts, { getProductsMap } from "../../App/Main/Posts/posts"
 
 
 const CartTotal = ({
     productsInCart,
-    productsMap=getProductsMap(products)
+    productsMap=getProductsMap(posts)
 }) => {
     return (
         <div>

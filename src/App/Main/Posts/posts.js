@@ -1,4 +1,4 @@
-const products = [
+const posts = [
     {
         id:1,
         name:"iPhone 11",
@@ -45,4 +45,4 @@ export const getProductsMap = (array) => {
     
 }
 
-export default products
+export default posts

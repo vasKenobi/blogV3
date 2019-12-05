@@ -1,6 +1,6 @@
 import React from 'react'
 import PostListItem from './PostListItem'
-import products from './products'
+import posts from './posts'
 
 
 const ProductsList = ({
@@ -14,7 +14,7 @@ const ProductsList = ({
             <h1 className="page-title">Products List</h1>
             <div className="row">
                 {
-                    products.map(({
+                    posts.map(({
                         id,
                         name,
                         description,
