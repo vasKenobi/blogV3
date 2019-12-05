@@ -41,7 +41,7 @@ class PostListItem extends Component {
         const {
             name,
             description,
-            capacity,
+            category,
             type,
             initRating,
             image,
@@ -63,7 +63,7 @@ class PostListItem extends Component {
                 </div>
                 <div className="product-description">{description}</div>
                 <div className="product-features">Type: {type}</div>
-                <div className="product-features">Capacity: {capacity} Gb</div>
+                <div className="product-features">category: {category} Gb</div>
                 <div className="product-initRating">initRating : {initRating} $</div>
                 <PostRating
                     postsRating={this.state.postsRating}
@@ -82,10 +82,10 @@ class PostListItem extends Component {
 
 
 PostListItem.propTypes = {
-    image:PropTypes.string,
+    image:PropTypes.string.isRequired,
     name:PropTypes.string.isRequired,
-    description:PropTypes.string,
-    capacity:PropTypes.number.isRequired,
+    description:PropTypes.string.isRequired,
+    category:PropTypes.string.isRequired,
     type:PropTypes.string.isRequired,
     initRating:PropTypes.number.isRequired,
 }

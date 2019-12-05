@@ -18,7 +18,7 @@ const PostList = ({
                         id,
                         name,
                         description,
-                        capacity,
+                        category,
                         initRating,
                         type,
                         image
@@ -28,7 +28,7 @@ const PostList = ({
                                 id={id}
                                 name={name}
                                 description={description}
-                                capacity={capacity}
+                                category={category}
                                 type={type}
                                 initRating={initRating}
                                 image={image}
