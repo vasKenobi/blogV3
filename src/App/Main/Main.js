@@ -6,6 +6,10 @@ import MajorSL from './MajorSL/MajorSL'
 import EnglishPL from './EnglishPL/EnglishPL'
 import PostPage from './Posts/PostPage'
 import GermanBL from './GermanBL/GermanBL'
+import Pagination from './Pagination/Pagination'
+import Sidebarsearch from './Widgets/Sidebarsearch'
+import Recentposts from './Widgets/Recentposts'
+import Popularcategories from './Widgets/Popularcategories'
 
 const Main = ({
 	addPostToFavourites,
@@ -17,13 +21,12 @@ const Main = ({
 	addLike,
 }) => {
 	return (
-		<main className="main">
-			<div className="container">
-				<div className="row">
-					<div className="col-lg-3">
-						
-					</div>
-					<div className="col-lg-9">
+		<section className="section wb">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+                        <div className="page-wrapper">
+
 						<Route path="/" exact render={()=>(
 							<PostList
 								addPostToFavourites={addPostToFavourites}
@@ -45,9 +48,28 @@ const Main = ({
 						
 						<Route path="/posts/:postId" component={PostPage} />
 					</div>
-				</div>
-			</div>
-		</main>
+
+					<hr className="invis"/>
+
+                        <div className="row">
+                            <div className="col-md-12">
+                                <Pagination/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div className="sidebar">
+                            <Sidebarsearch/>
+
+                            <Recentposts/>
+
+                            <Popularcategories/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 	)
 }
 
