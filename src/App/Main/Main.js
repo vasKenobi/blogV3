@@ -1,10 +1,10 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-import ProductsList from './Products/ProductsList'
+import ProductsList from './Posts/ProductsList'
 import FavourtiesPage from './FavourtiesPage/FavourtiesPage'
 import ShippingPage from './ShippingPage/ShippingPage'
 import EnglishPL from './EnglishPL/EnglishPL'
-import ProductPage from './Products/ProductPage'
+import ProductPage from './Posts/ProductPage'
 
 const Main = ({
 	addProductToCart,

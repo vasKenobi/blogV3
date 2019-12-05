@@ -1,6 +1,6 @@
 import React from 'react'
 import {keys} from 'lodash'
-import products, { getProductsMap } from '../../App/Main/Products/products'
+import products, { getProductsMap } from '../../App/Main/Posts/products'
 import CartProductListItem from './CartProductListItem'
 
 const CartProductList = ({
