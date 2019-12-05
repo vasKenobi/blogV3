@@ -10,8 +10,8 @@ const PostRating = ({
     return (
         <div>
             Total : {
-                keys(postsInFavourites).reduce((total,productId)=>(
-                    total + (postsInFavourites[productId] * productsMap[productId].price)
+                keys(postsInFavourites).reduce((total,postId)=>(
+                    total + (postsInFavourites[postId] * productsMap[postId].price)
                 ),0)
             } $
         </div>

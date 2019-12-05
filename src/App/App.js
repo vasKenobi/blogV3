@@ -22,43 +22,43 @@ class App extends Component {
 		
 	}
 
-	addPostToFavourites = (productId,count) =>{
+	addPostToFavourites = (postId,count) =>{
 		this.setState((prevState)=>({
 			postsInFavourites:{
 				...prevState.postsInFavourites,
-				[productId]:(prevState.postsInFavourites[productId] || 0 ) + count
+				[postId]:(prevState.postsInFavourites[postId] || 0 ) + count
 			}
 		}))
 	}
 
-	removePostFromFavourites = (productId) => {
+	removePostFromFavourites = (postId) => {
 		this.setState((prevState)=>({
-			postsInFavourites:omit(prevState.postsInFavourites,productId)
+			postsInFavourites:omit(prevState.postsInFavourites,postId)
 		}))
 	}	
-	changePostRating = (productId,count) => {
+	changePostRating = (postId,count) => {
 		this.setState((prevState)=>({
 			postsInFavourites:{
 				...prevState.postsInFavourites,
-				[productId]:count,
+				[postId]:count,
 			}
 		}))
 	}
 
-	addLike = (productId) => {
+	addLike = (postId) => {
 		this.setState((prevState)=>({
 			postsLikeState:{
 				...prevState.postsLikeState,
-				[productId]:true
+				[postId]:true
 			}
 		}))
 	}
 
-	removeLike = (productId) => {
+	removeLike = (postId) => {
 		this.setState((prevState)=>({
 			postsLikeState:{
 				...prevState.postsLikeState,
-				[productId]:false
+				[postId]:false
 			}
 		}))
 	}

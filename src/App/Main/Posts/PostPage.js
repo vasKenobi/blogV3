@@ -8,7 +8,7 @@ const PostPage = ({
     console.log(match)
     return (
         <div>
-            <h1 className="page-title">{productsMap[match.params.productId].name} </h1>
+            <h1 className="page-title">{productsMap[match.params.postId].name} </h1>
         </div>
     )
 }

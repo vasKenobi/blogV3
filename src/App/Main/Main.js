@@ -43,7 +43,7 @@ const Main = ({
 						<Route path="/EnglishPL" component={EnglishPL}/>
 						<Route path="/GermanBL" component={GermanBL}/>
 						
-						<Route path="/products/:productId" component={PostPage} />
+						<Route path="/products/:postId" component={PostPage} />
 					</div>
 				</div>
 			</div>

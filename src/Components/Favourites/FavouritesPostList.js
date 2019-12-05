@@ -13,11 +13,11 @@ const FavouritesPostList = ({
     return (
         <div>
             {
-                keys(postsInFavourites).map((productId)=>(
+                keys(postsInFavourites).map((postId)=>(
                     <CartItem
-                        product = {productsMap[productId]}
-                        productsCount = {postsInFavourites[productId]}
-                        key={productId}
+                        product = {productsMap[postId]}
+                        productsCount = {postsInFavourites[postId]}
+                        key={postId}
                         removePostFromFavourites={removePostFromFavourites}
                         changePostRating={changePostRating}
                     />
