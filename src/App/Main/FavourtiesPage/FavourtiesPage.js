@@ -1,7 +1,7 @@
 import React from 'react'
-import CartTotal from '../../../Components/Cart/CartTotal'
-import CartProductList from '../../../Components/Cart/CartProductList'
-import CartProductListItemExtended from '../../../Components/Cart/CartProductListItemExtended'
+import CartTotal from '../../../Components/Favourites/CartTotal'
+import CartProductList from '../../../Components/Favourites/CartProductList'
+import CartProductListItemExtended from '../../../Components/Favourites/CartProductListItemExtended'
 
 const FavourtiesPage = ({
     productsInCart,

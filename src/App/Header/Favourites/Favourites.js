@@ -1,8 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './Favourites.css'
-import CartTotal from '../../../Components/Cart/CartTotal'
-import CartProductList from '../../../Components/Cart/CartProductList'
+import CartTotal from '../../../Components/Favourites/CartTotal'
+import CartProductList from '../../../Components/Favourites/CartProductList'
 
 
 const Favourites = ({
