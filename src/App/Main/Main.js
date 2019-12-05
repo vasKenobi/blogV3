@@ -1,6 +1,6 @@
 import React from 'react'
 import {Route} from 'react-router-dom'
-import ProductsList from './Posts/ProductsList'
+import PostList from './Posts/PostList'
 import FavourtiesPage from './FavourtiesPage/FavourtiesPage'
 import ShippingPage from './ShippingPage/ShippingPage'
 import EnglishPL from './EnglishPL/EnglishPL'
@@ -24,7 +24,7 @@ const Main = ({
 					</div>
 					<div className="col-lg-9">
 						<Route path="/" exact render={()=>(
-							<ProductsList
+							<PostList
 								addProductToCart={addProductToCart}
 								productsLikeState={productsLikeState}
 								removeLike={removeLike}

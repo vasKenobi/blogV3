@@ -3,7 +3,7 @@ import PostListItem from './PostListItem'
 import posts from './posts'
 
 
-const ProductsList = ({
+const PostList = ({
     addProductToCart,
     productsLikeState,
     removeLike,
@@ -11,7 +11,7 @@ const ProductsList = ({
 }) => {
     return (
         <div>
-            <h1 className="page-title">Products List</h1>
+            <h1 className="page-title">Posts List</h1>
             <div className="row">
                 {
                     posts.map(({
@@ -46,4 +46,4 @@ const ProductsList = ({
     )
 }
 
-export default ProductsList
+export default PostList
