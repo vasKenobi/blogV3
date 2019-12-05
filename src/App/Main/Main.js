@@ -8,7 +8,7 @@ import PostPage from './Posts/PostPage'
 import GermanBL from './GermanBL/GermanBL'
 
 const Main = ({
-	addProductToCart,
+	addPostToFavourites,
 	postsInFavourites,
 	removeProductFromCart,
 	changeProductQuantity,
@@ -26,7 +26,7 @@ const Main = ({
 					<div className="col-lg-9">
 						<Route path="/" exact render={()=>(
 							<PostList
-								addProductToCart={addProductToCart}
+								addPostToFavourites={addPostToFavourites}
 								postsLikeState={postsLikeState}
 								removeLike={removeLike}
 								addLike={addLike}

@@ -45,7 +45,7 @@ class PostListItem extends Component {
             type,
             price,
             image,
-            addProductToCart,
+            addPostToFavourites,
             id,
             isLiked,
         } = this.props
@@ -73,7 +73,7 @@ class PostListItem extends Component {
                 />
                 <button 
                     className="btn btn-add-to-cart"
-                    onClick={()=>addProductToCart(id,this.state.productsCount)}
+                    onClick={()=>addPostToFavourites(id,this.state.productsCount)}
                     >Add to cart</button>
             </div>
         )

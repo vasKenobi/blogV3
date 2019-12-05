@@ -22,7 +22,7 @@ class App extends Component {
 		
 	}
 
-	addProductToCart = (productId,count) =>{
+	addPostToFavourites = (productId,count) =>{
 		this.setState((prevState)=>({
 			postsInFavourites:{
 				...prevState.postsInFavourites,
@@ -74,7 +74,7 @@ class App extends Component {
 				/>
 				
 				<Main 
-					addProductToCart={this.addProductToCart}
+					addPostToFavourites={this.addPostToFavourites}
 					postsInFavourites={this.state.postsInFavourites}
 					removeProductFromCart={this.removeProductFromCart}
 					changeProductQuantity={this.changeProductQuantity}

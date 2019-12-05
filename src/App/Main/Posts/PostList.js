@@ -4,7 +4,7 @@ import posts from './posts'
 
 
 const PostList = ({
-    addProductToCart,
+    addPostToFavourites,
     postsLikeState,
     removeLike,
     addLike
@@ -32,7 +32,7 @@ const PostList = ({
                                 type={type}
                                 price={price}
                                 image={image}
-                                addProductToCart={addProductToCart}
+                                addPostToFavourites={addPostToFavourites}
                                 isLiked={postsLikeState[id]}
                                 removeLike={removeLike}
 								addLike={addLike}
