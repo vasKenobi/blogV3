@@ -8,18 +8,18 @@ import PostRating from '../../../Components/Rating/PostRating';
 
 class PostListItem extends Component {
     state = {
-        productsCount:1,
+        postsRating:1,
     }
     
     onIncrementClick = () => {
         this.setState((prevState)=>({
-            productsCount:prevState.productsCount + 1
+            postsRating:prevState.postsRating + 1
         }))
     }
 
     onDecrementClick = () => {
         this.setState((prevState)=>({
-            productsCount:prevState.productsCount - 1
+            postsRating:prevState.postsRating - 1
         }))
     }
     renderLike = () => {
@@ -66,14 +66,14 @@ class PostListItem extends Component {
                 <div className="product-features">Capacity: {capacity} Gb</div>
                 <div className="product-price">Price : {price} $</div>
                 <PostRating
-                    productsCount={this.state.productsCount}
+                    postsRating={this.state.postsRating}
                     onIncrementClick={this.onIncrementClick}
                     onDecrementClick={this.onDecrementClick}
                     minCount={1}
                 />
                 <button 
                     className="btn btn-add-to-cart"
-                    onClick={()=>addPostToFavourites(id,this.state.productsCount)}
+                    onClick={()=>addPostToFavourites(id,this.state.postsRating)}
                     >Add to cart</button>
             </div>
         )

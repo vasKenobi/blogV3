@@ -16,7 +16,7 @@ const FavouritesPostList = ({
                 keys(postsInFavourites).map((postId)=>(
                     <CartItem
                         product = {postsMap[postId]}
-                        productsCount = {postsInFavourites[postId]}
+                        postsRating = {postsInFavourites[postId]}
                         key={postId}
                         removePostFromFavourites={removePostFromFavourites}
                         changePostRating={changePostRating}

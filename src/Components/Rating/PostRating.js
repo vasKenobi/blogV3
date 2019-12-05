@@ -3,19 +3,19 @@
  const ProductQuantity = ({
      onDecrementClick,
      onIncrementClick,
-     productsCount,
+     postsRating,
      minCount
  }) => {
      return (
         <div className="product-quantity">
             <button 
                 onClick={()=>onDecrementClick()}
-                disabled={productsCount <= minCount}
+                disabled={postsRating <= minCount}
             >-</button>
-            <input type="text" value={productsCount} readOnly/>
+            <input type="text" value={postsRating} readOnly/>
             <button 
                 onClick={()=>onIncrementClick()}
-                disabled={productsCount >= 10}
+                disabled={postsRating >= 10}
             >+</button>
         </div>
      )
