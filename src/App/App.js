@@ -2,6 +2,12 @@ import React,{Component} from 'react'
 import {omit} from 'lodash'
 import '../common/style/reset.css'
 import '../common/style/base.css'
+import '../common/css/bootstrap.css'
+import '../common/css/colors.css'
+import '../common/css/font-awesome.min.css'
+import '../common/css/responsive.css'
+import '../common/css/style.css'
+import '../common/css/version/blog-football.css'
 
 
 import Header from './Header/Header'
