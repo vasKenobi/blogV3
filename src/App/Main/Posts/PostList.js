@@ -19,7 +19,7 @@ const PostList = ({
                         name,
                         description,
                         capacity,
-                        price,
+                        initRating,
                         type,
                         image
                     })=> (
@@ -30,7 +30,7 @@ const PostList = ({
                                 description={description}
                                 capacity={capacity}
                                 type={type}
-                                price={price}
+                                initRating={initRating}
                                 image={image}
                                 addPostToFavourites={addPostToFavourites}
                                 isLiked={postsLikeState[id]}

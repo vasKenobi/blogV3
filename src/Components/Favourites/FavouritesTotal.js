@@ -11,7 +11,7 @@ const FavouritesTotal = ({
         <div>
             Total : {
                 keys(postsInFavourites).reduce((total,postId)=>(
-                    total + (postsInFavourites[postId] * postsMap[postId].price)
+                    total + (postsInFavourites[postId] * postsMap[postId].initRating)
                 ),0)
             } $
         </div>

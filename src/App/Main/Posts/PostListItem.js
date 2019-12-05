@@ -43,7 +43,7 @@ class PostListItem extends Component {
             description,
             capacity,
             type,
-            price,
+            initRating,
             image,
             addPostToFavourites,
             id,
@@ -64,7 +64,7 @@ class PostListItem extends Component {
                 <div className="product-description">{description}</div>
                 <div className="product-features">Type: {type}</div>
                 <div className="product-features">Capacity: {capacity} Gb</div>
-                <div className="product-price">Price : {price} $</div>
+                <div className="product-initRating">initRating : {initRating} $</div>
                 <PostRating
                     postsRating={this.state.postsRating}
                     onIncrementClick={this.onIncrementClick}
@@ -87,7 +87,7 @@ PostListItem.propTypes = {
     description:PropTypes.string,
     capacity:PropTypes.number.isRequired,
     type:PropTypes.string.isRequired,
-    price:PropTypes.number.isRequired,
+    initRating:PropTypes.number.isRequired,
 }
 
 

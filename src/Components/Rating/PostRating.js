@@ -15,7 +15,7 @@
             <input type="text" value={postsRating} readOnly/>
             <button 
                 onClick={()=>onIncrementClick()}
-                disabled={postsRating >= 10}
+                disabled={postsRating >= 1000000}
             >+</button>
         </div>
      )
