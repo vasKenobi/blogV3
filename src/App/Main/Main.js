@@ -2,7 +2,7 @@ import React from 'react'
 import {Route} from 'react-router-dom'
 import PostList from './Posts/PostList'
 import FavourtiesPage from './FavourtiesPage/FavourtiesPage'
-import ShippingPage from './ShippingPage/ShippingPage'
+import MajorSL from './MajorSL/MajorSL'
 import EnglishPL from './EnglishPL/EnglishPL'
 import PostPage from './Posts/PostPage'
 
@@ -38,7 +38,7 @@ const Main = ({
 								changeProductQuantity={changeProductQuantity}
 								
 						/>)}/>
-						<Route path="/shipping" component={ShippingPage}/>
+						<Route path="/shipping" component={MajorSL}/>
 						<Route path="/EnglishPL" component={EnglishPL}/>
 						<Route path="/products/:productId" component={PostPage} />
 					</div>

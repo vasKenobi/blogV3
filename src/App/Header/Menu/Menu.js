@@ -9,7 +9,7 @@ const Menu = () => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/">Products</Link></li>
                 <li><Link to="/EnglishPL">English Premier League</Link></li>
-                <li><Link to="/shipping">Shipping</Link></li>
+                <li><Link to="/MajorSL">Major Soccer League</Link></li>
             </ul>
         </div>
     )
