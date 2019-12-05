@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom'
 import ProductsList from './Products/ProductsList'
 import FavourtiesPage from './FavourtiesPage/FavourtiesPage'
 import ShippingPage from './ShippingPage/ShippingPage'
-import PaymentPage from './PaymentPage/PaymentPage'
+import EnglishPL from './EnglishPL/EnglishPL'
 import ProductPage from './Products/ProductPage'
 
 const Main = ({
@@ -39,7 +39,7 @@ const Main = ({
 								
 						/>)}/>
 						<Route path="/shipping" component={ShippingPage}/>
-						<Route path="/payment" component={PaymentPage}/>
+						<Route path="/EnglishPL" component={EnglishPL}/>
 						<Route path="/products/:productId" component={ProductPage} />
 					</div>
 				</div>
