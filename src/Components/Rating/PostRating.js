@@ -7,13 +7,13 @@
      minCount
  }) => {
      return (
-        <div className="product-quantity">
-            <button 
+        <div className="input-group input-group-sm mb-3">
+            <button className="btn-xs btnRate" 
                 onClick={()=>onDecrementClick()}
                 disabled={postsRating <= minCount}
             >-</button>
-            <input type="text" value={postsRating} readOnly/>
-            <button 
+            <input className="text-center" type="text" value={postsRating} readOnly/>
+            <button className="btn-xs btnRate" 
                 onClick={()=>onIncrementClick()}
                 disabled={postsRating >= 1000000}
             >+</button>

@@ -44,6 +44,9 @@ class PostListItem extends Component {
             author,
             initRating,
             image,
+            urlLink,
+            date,
+            urlLinkHead,
             addPostToFavourites,
             id,
             isLiked,
@@ -59,6 +62,7 @@ class PostListItem extends Component {
                 </div>
                 
                 <div className="blog-meta big-meta col-md-8">
+                    <div><Link to={urlLinkHead}><span className="bg-aqua">{category}</span></Link></div>
                     <button class="btn btn-primary" onClick={()=>this.renderLike()}>
                         {isLiked ? <span>&#9829;</span> : <span>&#9825;</span>}
                     </button>
@@ -66,16 +70,17 @@ class PostListItem extends Component {
                         <Link to={`/posts/${id}`}>{name}</Link>
                     </h4>
                     <div>{description}</div>
-                    <div>{author}</div>
-                    <div className="bg-aqua">{category}</div>
-                    <div>Initial Rating : {initRating}</div>
+                    <small>{author}</small>
+                    <small>{date}</small>
+                    
+                    <div className="marginSmall" title="1 means best article you've ever read. 1000000 means worst one ever."><h5>Evaluate article</h5></div>
                     <PostRating
                         postsRating={this.state.postsRating}
                         onIncrementClick={this.onIncrementClick}
                         onDecrementClick={this.onDecrementClick}
                         minCount={1}
                     />
-                    <button class="btn btn-primary"
+                    <button className="btn btn-primary marginSmall"
                         onClick={()=>addPostToFavourites(id,this.state.postsRating)}
                         >Add to Favourites
                     </button>
@@ -91,6 +96,7 @@ PostListItem.propTypes = {
     name:PropTypes.string.isRequired,
     description:PropTypes.string.isRequired,
     category:PropTypes.string.isRequired,
+    date:PropTypes.string.isRequired,
     author:PropTypes.string.isRequired,
     initRating:PropTypes.number.isRequired,
 }

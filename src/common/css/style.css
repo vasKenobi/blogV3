@@ -1670,3 +1670,9 @@ hr.invis3 {
     background-color: #74a044;
     border: white;
 }
+.marginSmall{
+    margin: 3px;
+}
+.btnRate{
+    background-color: #74a044 !important;
+}

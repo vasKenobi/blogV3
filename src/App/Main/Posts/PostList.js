@@ -19,9 +19,12 @@ const PostList = ({
                         category,
                         initRating,
                         author,
-                        image
+                        urlLinkHead,
+                        urlLink,
+                        date,
+                        image,
                     })=> (
-                        <div className="col-lg-6" key={id}>
+                        <div key={id}>
                             <PostListItem
                                 id={id}
                                 name={name}
@@ -33,7 +36,10 @@ const PostList = ({
                                 addPostToFavourites={addPostToFavourites}
                                 isLiked={postsLikeState[id]}
                                 removeLike={removeLike}
-								addLike={addLike}
+                                addLike={addLike}
+                                date={date}
+                                urlLinkHead={urlLinkHead}
+                                urlLink={urlLink}
                             />
                             <hr className="invis"/>
                         </div> 
