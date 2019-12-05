@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import './cart.css'
+import './Favourites.css'
 import CartTotal from '../../../Components/Cart/CartTotal'
 import CartProductList from '../../../Components/Cart/CartProductList'
 
 
-const Cart = ({
+const Favourites = ({
     productsInCart,
 }) => {
     return (
@@ -22,4 +22,4 @@ const Cart = ({
 }
 
 
-export default Cart
+export default Favourites
