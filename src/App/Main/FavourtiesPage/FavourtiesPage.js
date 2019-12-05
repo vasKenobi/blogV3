@@ -13,7 +13,7 @@ const FavourtiesPage = ({
             <h1 className="page-title">Cart</h1>
             <FavouritesPostList
                 postsInFavourites={postsInFavourites}
-                CartItem={FavouritesPostListItemExtended}
+                FavouritesItem={FavouritesPostListItemExtended}
                 removePostFromFavourites={removePostFromFavourites}
                 changePostRating={changePostRating}
             />     
