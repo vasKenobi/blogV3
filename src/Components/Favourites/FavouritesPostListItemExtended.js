@@ -3,7 +3,7 @@ import './FavouritesPostListItemExtended.css'
 import ProductQuantity from '../Quantity/ProductQuantity'
 
 
-const CartProductListItemExtended = ({
+const FavouritesPostListItemExtended = ({
     product,
     productsCount,
     removeProductFromCart,
@@ -47,5 +47,5 @@ const CartProductListItemExtended = ({
     </div>
 )
 
-export default CartProductListItemExtended
+export default FavouritesPostListItemExtended
 
