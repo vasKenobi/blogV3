@@ -38,9 +38,9 @@ const posts = [
 ]
 
 export const getPostsMap = (array) => {
-    return array.reduce((map,product)=>({
+    return array.reduce((map,post)=>({
         ...map,
-        [product.id]:product,
+        [post.id]:post,
     }),{})
     
 }

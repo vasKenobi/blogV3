@@ -2,10 +2,10 @@ import React from 'react'
 
 const FavouritesPostListItem = ({
     postsRating,
-    product
+    post
 }) => {
     return (
-        <div>{product.name} : {postsRating}</div>
+        <div>{post.name} : {postsRating}</div>
     )
 }
 

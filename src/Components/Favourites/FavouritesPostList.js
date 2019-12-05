@@ -15,7 +15,7 @@ const FavouritesPostList = ({
             {
                 keys(postsInFavourites).map((postId)=>(
                     <FavouritesItem
-                        product = {postsMap[postId]}
+                        post = {postsMap[postId]}
                         postsRating = {postsInFavourites[postId]}
                         key={postId}
                         removePostFromFavourites={removePostFromFavourites}

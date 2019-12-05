@@ -4,7 +4,7 @@ import PostRating from '../Rating/PostRating'
 
 
 const FavouritesPostListItemExtended = ({
-    product,
+    post,
     postsRating,
     removePostFromFavourites,
     changePostRating
@@ -12,14 +12,14 @@ const FavouritesPostListItemExtended = ({
     <div className="cart-product-list-item-description">
         <div className="row">
             <div className="col-lg-3">
-                <img src={product.image} alt={product.name}/>
+                <img src={post.image} alt={post.name}/>
             </div>
             <div className="col-lg-9">
                 <p className="cart-extended-name">
-                    <span> {product.name} </span> 
+                    <span> {post.name} </span> 
                 </p>
                 <p className="cart-extended-price">
-                        initRating for one item: <span className="bold">$ {product.initRating} </span> 
+                        initRating for one item: <span className="bold">$ {post.initRating} </span> 
                 </p>
                 <p className="cart-extended-count">
                         Selected quantity: <span className="bold"> {postsRating} </span> 
@@ -29,18 +29,18 @@ const FavouritesPostListItemExtended = ({
                     postsRating={postsRating}
                     onDecrementClick={()=>{
                         if(postsRating===1) {
-                            removePostFromFavourites(product.id)
+                            removePostFromFavourites(post.id)
                         } else {
-                            changePostRating(product.id,postsRating-1)
+                            changePostRating(post.id,postsRating-1)
                         }
                     }}
-                    onIncrementClick={()=>changePostRating(product.id,postsRating+1)}
+                    onIncrementClick={()=>changePostRating(post.id,postsRating+1)}
                     minCount={0}
                 />
                 <p className="cart-extended-sum">
-                        Sum for this item: <span className="bold sum-price">$ {(product.initRating * postsRating)} </span> 
+                        Sum for this item: <span className="bold sum-price">$ {(post.initRating * postsRating)} </span> 
                 </p>
-                <button onClick={()=>removePostFromFavourites(product.id)}>Remove from Favourites</button>
+                <button onClick={()=>removePostFromFavourites(post.id)}>Remove from Favourites</button>
                 
             </div>
         </div>
