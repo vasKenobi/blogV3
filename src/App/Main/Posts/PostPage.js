@@ -21,7 +21,7 @@ const PostPage = ({
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-title-area">
-                                <span class="color-green"><Link title="" to={postsMap[match.params.postId].urlLink2}>English Permier League</Link></span>
+                                <span class="color-green"><Link title="" to={postsMap[match.params.postId].urlLinkHead}>{postsMap[match.params.postId].category}</Link></span>
                 
                                 <h3>{postsMap[match.params.postId].name} </h3>
 

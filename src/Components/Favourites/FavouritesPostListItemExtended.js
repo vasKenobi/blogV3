@@ -7,7 +7,19 @@ const FavouritesPostListItemExtended = ({
     postsRating,
     removePostFromFavourites,
     changePostRating,
+    // name,
+    // description,
+    // category,
+    // author,
+    // initRating,
+    // image,
+    // urlLink,
+    // date,
+    // urlLinkHead,
+    // addPostToFavourites,
+    // id,
     isLiked,
+
 }) => (
     <div className="blog-box row">
         <div className="col-md-9">

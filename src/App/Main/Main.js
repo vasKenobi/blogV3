@@ -8,7 +8,6 @@ import PostPage from './Posts/PostPage'
 import GermanBL from './GermanBL/GermanBL'
 import Pagination from './Pagination/Pagination'
 import Sidebarsearch from './Widgets/Sidebarsearch'
-import Recentposts from './Widgets/Recentposts'
 import Popularcategories from './Widgets/Popularcategories'
 
 const Main = ({
@@ -61,8 +60,6 @@ const Main = ({
                     <div className="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                         <div className="sidebar">
                             <Sidebarsearch/>
-
-                            <Recentposts/>
 
                             <Popularcategories/>
                         </div>
