@@ -35,7 +35,7 @@ const Main = ({
 								addLike={addLike}
 						/>
 						)}/>
-						<Route path="/cart" render={()=>(
+						<Route path="/favourites" render={()=>(
 							<FavourtiesPage
 								postsInFavourites={postsInFavourites}
 								removePostFromFavourites={removePostFromFavourites}

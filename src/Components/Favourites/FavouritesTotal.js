@@ -9,7 +9,7 @@ const FavouritesTotal = ({
 }) => {
     return (
         <div>
-            Granted marks : {
+            Final granted marks : {
                 keys(postsInFavourites).reduce((total,postId)=>(
                     total + (postsInFavourites[postId] * postsMap[postId].initRating)
                 ),0)

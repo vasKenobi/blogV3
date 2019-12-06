@@ -1,5 +1,4 @@
 import React from 'react'
-import './FavouritesPostListItemExtended.css'
 import PostRating from '../Rating/PostRating'
 
 
@@ -7,21 +6,26 @@ const FavouritesPostListItemExtended = ({
     post,
     postsRating,
     removePostFromFavourites,
-    changePostRating
+    changePostRating,
+    isLiked,
 }) => (
-    <div className="cart-product-list-item-description">
-        <div className="row">
-            <div className="col-lg-3">
-                <img src={post.image} alt={post.name}/>
+    <div className="blog-box row">
+        <div className="col-md-9">
+                <button className="btn btn-primary">
+                        {isLiked ? <span>&#9829;</span> : <span>&#9825;</span>}
+                </button>
+            <div className="post-media">
+                <img src={post.image} alt={post.name} className="img-fluid"/>
+                <div className="hovereffect"></div>
             </div>
-            <div className="col-lg-9">
-                <p className="cart-extended-name">
-                    <span> {post.name} </span> 
+            <div>
+                <p>
+                    <h4 className="bg-aqua"> {post.name} </h4> 
                 </p>
-                <p className="cart-extended-price" title="1 means best article you've ever read. 1000000 means worst one ever.">
+                <p title="1 means best article you've ever read. 10 means worst one ever.">
                         Initial marks: <span className="bold"> {post.initRating} </span> 
                 </p>
-                <p className="cart-extended-count" title="1 means best article you've ever read. 1000000 means worst one ever.">
+                <p title="1 means best article you've ever read. 10 means worst one ever.">
                         Granted marks: <span className="bold"> {postsRating} </span> 
                         
                 </p>
@@ -37,10 +41,10 @@ const FavouritesPostListItemExtended = ({
                     onIncrementClick={()=>changePostRating(post.id,postsRating+1)}
                     minCount={0}
                 />
-                <p className="cart-extended-sum" title="1 means best article you've ever read. 1000000 means worst one ever.">
-                        Final granted marks: <span className="bold sum-price"> {(post.initRating * postsRating)} </span> 
+                <p title="1 means best article you've ever read. 10 means worst one ever.">
+                        Granted marks: <span> {(post.initRating * postsRating)} </span> 
                 </p>
-                <button onClick={()=>removePostFromFavourites(post.id)}>Remove from Favourites</button>
+                <button className="btn btn-primary marginSmall" onClick={()=>removePostFromFavourites(post.id)}>Remove from Favourites</button>
                 
             </div>
         </div>

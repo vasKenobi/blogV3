@@ -55,7 +55,7 @@ class PostListItem extends Component {
         return (
             <div className="blog-box row">
                 <div className="col-md-4">
-                    <button class="btn btn-primary" onClick={()=>this.renderLike()}>
+                    <button className="btn btn-primary" onClick={()=>this.renderLike()}>
                         {isLiked ? <span>&#9829;</span> : <span>&#9825;</span>}
                     </button>
                     <div className="post-media">
@@ -83,7 +83,7 @@ class PostListItem extends Component {
                     <small>{author}</small>
                     <small>{date}</small>
                     
-                    <div className="marginSmall" title="1 means best article you've ever read. 1000000 means worst one ever."><h5>Evaluate article</h5></div>
+                    <div className="marginSmall" title="1 means best article you've ever read. 10 means worst one ever."><h5>Evaluate article</h5></div>
                     
                     <button className="btn btn-primary marginSmall"
                         onClick={()=>addPostToFavourites(id,this.state.postsRating)}

@@ -20,7 +20,7 @@ const Favourites = ({
             />
             </div>
             <div>
-            <Link to="/cart">Go to Favourites</Link>
+            <Link to="/favourites">Go to Favourites</Link>
             </div>
         </div>
     )

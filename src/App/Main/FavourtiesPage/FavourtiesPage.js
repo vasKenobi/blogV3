@@ -10,7 +10,7 @@ const FavourtiesPage = ({
 }) => {
     return (
         <div>
-            <h1 className="page-title">Cart</h1>
+            <h1 className="page-title">Favourites</h1>
             <FavouritesPostList
                 postsInFavourites={postsInFavourites}
                 FavouritesItem={FavouritesPostListItemExtended}
