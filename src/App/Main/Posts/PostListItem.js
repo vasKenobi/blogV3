@@ -55,17 +55,27 @@ class PostListItem extends Component {
         return (
             <div className="blog-box row">
                 <div className="col-md-4">
+                    <button class="btn btn-primary" onClick={()=>this.renderLike()}>
+                        {isLiked ? <span>&#9829;</span> : <span>&#9825;</span>}
+                    </button>
                     <div className="post-media">
                         <img src={image} alt="" className="img-fluid"/>
                         <div className="hovereffect"></div>
                     </div>
+                    <div className="postShClass">
+                    <PostRating
+                        postsRating={this.state.postsRating}
+                        onIncrementClick={this.onIncrementClick}
+                        onDecrementClick={this.onDecrementClick}
+                        minCount={1}
+                    />
+                    </div>
+
                 </div>
                 
                 <div className="blog-meta big-meta col-md-8">
                     <div><Link to={urlLinkHead}><span className="bg-aqua">{category}</span></Link></div>
-                    <button class="btn btn-primary" onClick={()=>this.renderLike()}>
-                        {isLiked ? <span>&#9829;</span> : <span>&#9825;</span>}
-                    </button>
+                    
                     <h4 className="bg-aqua">
                         <Link to={`/posts/${id}`}>{name}</Link>
                     </h4>
@@ -74,12 +84,7 @@ class PostListItem extends Component {
                     <small>{date}</small>
                     
                     <div className="marginSmall" title="1 means best article you've ever read. 1000000 means worst one ever."><h5>Evaluate article</h5></div>
-                    <PostRating
-                        postsRating={this.state.postsRating}
-                        onIncrementClick={this.onIncrementClick}
-                        onDecrementClick={this.onDecrementClick}
-                        minCount={1}
-                    />
+                    
                     <button className="btn btn-primary marginSmall"
                         onClick={()=>addPostToFavourites(id,this.state.postsRating)}
                         >Add to Favourites
