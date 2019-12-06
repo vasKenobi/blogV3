@@ -15,7 +15,7 @@
             <input className="text-center" type="text" value={postsRating} readOnly/>
             <button className="btn-xs btnRate" 
                 onClick={()=>onIncrementClick()}
-                disabled={postsRating >= 1000000}
+                disabled={postsRating >= 10}
             >+</button>
         </div>
      )

@@ -1679,3 +1679,10 @@ hr.invis3 {
 .postShClass{
     margin-left: 15px;
 }
+.favouritesTopBarPositon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: right;
+
+}
